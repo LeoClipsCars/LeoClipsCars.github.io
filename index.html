@@ -26,7 +26,12 @@
   .bar { display: flex; align-items: center; gap: 14px; padding: 28px 0; }
   .mark {
     width: 40px; height: 40px; border-radius: 9px; flex: none;
-    background: var(--accent); color: #fff; display: grid; place-items: center;
+    /* Fixed #b3202a, NOT var(--accent): this is the identity mark and it must
+       match the TikTok app icon (brand/app-icon.png), which is a flat PNG and
+       cannot follow the viewer's theme. Following --accent made it #e2434d in
+       dark mode -- i.e. matching the icon only in light mode. Links still use
+       --accent and still lighten for contrast; only the mark is pinned. */
+    background: #b3202a; color: #fff; display: grid; place-items: center;
     font-weight: 700; font-size: 15px; letter-spacing: .02em;
   }
   .bar h1 { font-size: 17px; margin: 0; font-weight: 650; letter-spacing: -.01em; }
@@ -55,7 +60,7 @@
 
 <header>
   <div class="bar">
-    <div class="mark">AC</div>
+    <div class="mark">LC</div>
     <div>
       <h1>AIOS Clip Poster</h1>
       <p>Short-form video publishing tool</p>
@@ -93,9 +98,10 @@
   <h3>Source material and permission</h3>
   <p>
     Clips are made from long-form videos published by their original creators,
-    used with the creator's permission. Each clip credits its source and links
-    back to the original video. The tool exists to send viewers to that original
-    video, not to replace it.
+    used with the creator's written permission, obtained before any clip from
+    their channel is published. Each clip credits its source and links back to
+    the original video. The tool exists to send viewers to that original video,
+    not to replace it.
   </p>
 </div>
 
@@ -121,7 +127,7 @@
 <footer>
   <a href="./privacy.html">Privacy Policy</a>
   <a href="./terms.html">Terms of Service</a>
-  <span>Last updated 16 August 2026</span>
+  <span>Last updated 17 August 2026</span>
 </footer>
 
 </div>
