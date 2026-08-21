@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AIOS Clip Poster</title>
+<title>Leo Clips Cars</title>
+<meta name="description" content="Leo Clips Cars is a short-form clipping agency for car YouTubers. Long-form videos in, credited short-form clips out — with the creator's written permission.">
 <style>
   :root {
     --bg: #ffffff; --fg: #16161a; --muted: #5c5c66;
@@ -22,20 +23,22 @@
     -webkit-font-smoothing: antialiased;
   }
   .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px 80px; }
-  header { border-bottom: 1px solid var(--line); margin-bottom: 44px; }
-  .bar { display: flex; align-items: center; gap: 14px; padding: 28px 0; }
+  header { border-bottom: 1px solid var(--line); margin-bottom: 40px; }
+  .bar { display: flex; align-items: center; gap: 14px; padding: 24px 0 16px; }
   .mark {
     width: 40px; height: 40px; border-radius: 9px; flex: none;
     /* Fixed #b3202a, NOT var(--accent): this is the identity mark and it must
        match the TikTok app icon (brand/app-icon.png), which is a flat PNG and
-       cannot follow the viewer's theme. Following --accent made it #e2434d in
-       dark mode -- i.e. matching the icon only in light mode. Links still use
-       --accent and still lighten for contrast; only the mark is pinned. */
+       cannot follow the viewer's theme. */
     background: #b3202a; color: #fff; display: grid; place-items: center;
     font-weight: 700; font-size: 15px; letter-spacing: .02em;
   }
   .bar h1 { font-size: 17px; margin: 0; font-weight: 650; letter-spacing: -.01em; }
   .bar p { margin: 2px 0 0; font-size: 13.5px; color: var(--muted); }
+  nav { display: flex; flex-wrap: wrap; gap: 4px 18px; padding: 0 0 14px; font-size: 14px; }
+  nav a { color: var(--muted); text-decoration: none; }
+  nav a:hover { color: var(--accent); }
+  nav a[aria-current="page"] { color: var(--fg); font-weight: 600; }
   h2 { font-size: 20px; margin: 40px 0 12px; letter-spacing: -.01em; }
   p { margin: 0 0 16px; }
   .lede { font-size: 18.5px; line-height: 1.55; }
@@ -62,36 +65,45 @@
   <div class="bar">
     <div class="mark">LC</div>
     <div>
-      <h1>AIOS Clip Poster</h1>
-      <p>Short-form video publishing tool</p>
+      <h1>Leo Clips Cars</h1>
+      <p>Short-form clipping for car YouTube</p>
     </div>
   </div>
+  <nav>
+    <a href="./index.html" aria-current="page">Home</a>
+    <a href="./how-it-works.html">How it works</a>
+    <a href="./creators.html">For creators</a>
+    <a href="./faq.html">FAQ</a>
+    <a href="./contact.html">Contact</a>
+  </nav>
 </header>
 
 <p class="lede">
-  AIOS Clip Poster is a small, self-hosted tool that publishes short-form video
-  clips to the social media accounts its operator owns.
+  Leo Clips Cars is a clipping agency for car YouTubers. We take a creator's
+  long-form videos and cut them into short vertical clips — captioned, credited,
+  and published to TikTok, Instagram Reels, YouTube Shorts, Facebook and X.
 </p>
 
 <p>
-  It is run by one person on their own computer. It is not a product, not a
-  hosted service, and it has no sign-up — there are no users other than the
-  operator.
+  Many car channels put out excellent long-form content and have little or no
+  short-form presence. That is the gap we work in: the content already exists,
+  it just is not reaching the short-form audience. Every clip we publish exists
+  to send viewers back to the creator's full video and channel.
 </p>
 
-<h2>What it does</h2>
-
-<p>
-  Long-form videos are cut into short vertical clips with captions. This tool
-  takes those finished clips and uploads them, on a schedule the operator
-  controls, to accounts the operator runs on TikTok, YouTube, Instagram and
-  Facebook.
-</p>
+<h2>What we do</h2>
 
 <ul>
-  <li>Every upload is started deliberately by the operator. Nothing runs unattended.</li>
-  <li>It posts only to accounts the operator owns and has personally connected.</li>
-  <li>It reads nothing from other people's accounts and collects no data about them.</li>
+  <li><strong>Find the moments.</strong> We study a channel's whole catalogue —
+      not one video at a time — and select the moments that stand on their own:
+      builds, saves, fails, hard-won advice.</li>
+  <li><strong>Cut for each platform.</strong> Every clip gets burned-in
+      captions, the creator's branding on an end card, and platform-specific
+      copy — a TikTok caption is written for TikTok, a Shorts title for
+      YouTube search.</li>
+  <li><strong>Send viewers home.</strong> Each clip credits its source and
+      links back to the original video. The clip is the trailer; the
+      creator's channel is the destination.</li>
 </ul>
 
 <div class="card">
@@ -100,34 +112,34 @@
     Clips are made from long-form videos published by their original creators,
     used with the creator's written permission, obtained before any clip from
     their channel is published. Each clip credits its source and links back to
-    the original video. The tool exists to send viewers to that original video,
+    the original video. The clips exist to send viewers to that original video,
     not to replace it.
   </p>
 </div>
 
-<h2>How platform accounts are connected</h2>
+<h2>Who is behind this</h2>
 
 <p>
-  Connections are made through each platform's own official sign-in flow. The
-  operator signs in on the platform's website and approves access there. The
-  tool receives an access token, which is stored on the operator's own computer
-  and used only to upload clips to that account.
+  Leo Clips Cars is run by one person, in-house, on their own equipment. There
+  is no outsourced clip farm and no volume play: a small number of channels,
+  worked deeply. The publishing software is our own — how it operates, and what
+  it can and cannot do, is described on the
+  <a href="./how-it-works.html">how it works</a> page.
 </p>
 
-<p>
-  No account passwords are stored by this tool, and none are needed.
-</p>
-
-<h2>Contact</h2>
+<h2>Working with us</h2>
 
 <p>
-  <a href="mailto:leoclipscars@gmail.com">leoclipscars@gmail.com</a>
+  If you run a car channel and want your back catalogue working for you on
+  short-form, see the <a href="./creators.html">for creators</a> page for how
+  an engagement works, or <a href="./contact.html">get in touch</a> directly.
+  Common questions are answered in the <a href="./faq.html">FAQ</a>.
 </p>
 
 <footer>
   <a href="./privacy.html">Privacy Policy</a>
   <a href="./terms.html">Terms of Service</a>
-  <span>Last updated 17 August 2026</span>
+  <span>Last updated 21 August 2026</span>
 </footer>
 
 </div>
